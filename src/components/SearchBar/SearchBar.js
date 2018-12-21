@@ -1,5 +1,5 @@
 import React from 'react';
-import './SideBar.css';
+import './SearchBar.css';
 
 const sortByOptions = {
     "Best Match": 'best_match',
@@ -7,7 +7,7 @@ const sortByOptions = {
     "Most Reviewed": 'review_count'
 };
 
-export class SearchBar extends React.Component {
+class SearchBar extends React.Component {
     renderSortByOptions() {
         return Object.keys(sortByOptions).map(
             (sortByOption) => {
@@ -36,3 +36,5 @@ export class SearchBar extends React.Component {
         );
     }
 }
+
+export default SearchBar;
